@@ -29,7 +29,7 @@ public class ConnexionTest {
 		System.out.println("Navigation to Home OK");
 		
 		//Etape 2: Navigation vers la page de connexion 
-		driver.findElement(By.linkText("Login")).click(); 
+		driver.findElement(By.linkText("Connexion")).click(); 
 		expectedUrl="https://www.legalife.fr/inscription/";
 		Assert.assertEquals(expectedUrl, driver.getCurrentUrl());
 		WebElement LoginField = driver.findElement(By.xpath("//*[@id=\'login-popup-login\']/form/input[1]"));
